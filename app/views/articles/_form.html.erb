@@ -1,0 +1,28 @@
+<% name ||= "Crear" %>
+<h2><%= name %> articulo	</h2>
+
+<%= form_for(@articles) do |ar| %>
+	<% @articles.errors.full_messages.each do |msg| %>
+		<p class="red">* <%=  msg %></p>
+	<%end%>
+	<div class="field">
+		<%= ar.text_field :title, placeholder: "Titulo de articulo", class: "form-control" %>
+	</div>
+	<div class="field">
+		Portada: <%= ar.file_field :cover %>
+	</div>
+	<div class="field">
+		<%= ar.text_area :body, placeholder: "Escribe contenido de articulo", class: "form-control", style: "height: 250px;"%>
+	</div>
+	<div class="field">
+		<label>Categorias: </label>
+			<% @categories.each do |category| %>
+				<div class="field">
+					<%= check_box_tag "categories[]", category.id %> <%= category.name %>
+				</div>
+			<%end%>
+	</div>
+	<div class="field">
+		<%= ar.submit "Guardar", class: "btn be-red white" %>
+	</div>
+<%end%>

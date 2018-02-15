@@ -1,0 +1,107 @@
+html, body{
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a, a:visited{
+	color: inherit;
+	text-decoration: none;
+}
+
+.btn{
+	background: inherit;
+	border: none;
+	outline: none;
+	text-transform: uppercase;
+	cursor: pointer;
+	padding: 10px 12px;
+}
+
+.bottom-space{
+	margin-bottom: 2em;
+}
+
+.be-big{
+	font-size: 2em;
+}
+
+.be-small{
+	font-size: 12px;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.text-justify{
+	text-align: justify;
+}
+
+.no-margin{
+	margin: 0;
+}
+
+.no-list{
+	list-style: none;
+}
+
+.be-red{
+	background-color: #E74C3C;
+}
+
+.white{
+	color: white;
+}
+
+.red{
+	color: #E74C3C !important;	
+}
+
+.blue{
+	color: #3366ff !important;
+}
+.large-padding{
+	padding: 10px 7px;
+}
+
+.grey{
+	color: #666;
+}
+.field, .top-space, .actions{
+	margin-top: 1em;
+}
+
+.form-control{
+	border: none;
+	border-bottom: 1px solid;
+	display: block;
+	font-size: 1.2em;
+	padding: 10px 0px;
+	outline: none;
+	width: 100%;
+}
+
+.relative{
+	position: relative;
+}
+
+.absolute{
+	position: absolute;
+}
+
+.background-cover{
+	background-position: center;
+	background-size: cover;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.article-height{
+	height: 100px;
+}
